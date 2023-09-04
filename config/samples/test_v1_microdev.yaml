@@ -1,0 +1,12 @@
+apiVersion: test.606.hdu.io/v1
+kind: MicroDev
+metadata:
+  labels:
+    app.kubernetes.io/name: microdev
+    app.kubernetes.io/instance: microdev-sample
+    app.kubernetes.io/part-of: mycontroller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: mycontroller
+  name: microdev-sample
+spec:
+  # TODO(user): Add fields here

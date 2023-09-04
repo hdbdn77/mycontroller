@@ -1,0 +1,31 @@
+# permissions for end users to edit microdevs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: microdev-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: mycontroller
+    app.kubernetes.io/part-of: mycontroller
+    app.kubernetes.io/managed-by: kustomize
+  name: microdev-editor-role
+rules:
+- apiGroups:
+  - test.606.hdu.io
+  resources:
+  - microdevs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - test.606.hdu.io
+  resources:
+  - microdevs/status
+  verbs:
+  - get
