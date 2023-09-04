@@ -1,4 +1,4 @@
-# kubetest
+# mycontroller
 // TODO(user): Add simple overview of use/purpose
 
 ## Description
@@ -18,13 +18,13 @@ kubectl apply -f config/samples/
 2. Build and push your image to the location specified by `IMG`:
 
 ```sh
-make docker-build docker-push IMG=<some-registry>/kubetest:tag
+make docker-build docker-push IMG=registry.cn-hangzhou.aliyuncs.com/customkube/mycontroller:
 ```
 
 3. Deploy the controller to the cluster with the image specified by `IMG`:
 
 ```sh
-make deploy IMG=<some-registry>/kubetest:tag
+make deploy IMG=registry.cn-hangzhou.aliyuncs.com/customkube/mycontroller:
 ```
 
 ### Uninstall CRDs
