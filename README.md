@@ -1,8 +1,8 @@
 # mycontroller
-// TODO(user): Add simple overview of use/purpose
+// 基于自主缩放服务的自定义控制器
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+// 定期查询自主缩放服务的计划副本数，与匹配的deployment的副本数对比，决定是否更新deployment
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
